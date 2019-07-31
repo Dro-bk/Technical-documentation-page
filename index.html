@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Python tutorial</title>
+</head>
+<html>
+<body>
+  <nav id="navbar">
+    <header>Python tutorial</header>
+    <ul>
+      <li><a class="nav-link" href="#introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+      <li><a class="nav-link" href="#Python_Variables">Python Variables</a></li>
+      <li><a class="nav-link" href="#Python_Numbers">Python Numbers</a></li>
+      <li><a class="nav-link" href="#Python_Casting">Python Casting</a></li>
+      <li><a class="nav-link" href="#Python_Strings">Python Strings</a></li>
+        </ul>
+  </nav>
+  <main id="main-doc">
+    <section id="introduction" class="main-section">
+      <header>Introduction</header>
+      <h1>What is python?</h1>
+      <p>Python is a popular programming language. It was created in 1991 by Guido van Rossum.</p>
+      <h2>It is used for:</h2>
+      <ul>
+        <li>web development (server-side)</li>
+        <li>software development</li>
+        <li> mathematics</li>
+        <li>system scripting</li>
+      </ul>
+      <h3>What can Python do?</h3>
+      <ul>
+        <li>Python can be used on a server to create web applications</li>
+        <li>Python can be used alongside software to create workflows</li>
+        <li>Python can connect to database systems it can also read and modify files.</li>
+        <li>Python can be used to handle big data and perform complex mathematics</li>
+        <li>Python can be used for rapid prototyping, or for production-ready software development</li>
+      </ul>
+      <h3>Why Python?</h3>
+      <ul>
+        <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc)</li>
+        <li>Python has a simple syntax similar to the English language
+        </li>
+        <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages</li>
+        <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick</li>
+        <li>Python can be treated in a procedural way, an object-orientated way or a functional way</li>
+      </ul>
+      <h3>Good to know</h3>
+      <ul>
+        <li>The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular</li>
+        <li>In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python
+          files
+        </li>
+      </ul>
+      <h3>Python Syntax compared to other programming languages</h3>
+      <ul>
+        <li>Python was designed to for readability, and has some similarities to the English language with influence from mathematics. Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+          Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.
+        </section>
+    <section id="Getting_Started" class="main-section">
+      <header>Getting Started</header>
+      <h3>Python Install</h3>
+      <p>Many PCs and Macs will have python already installed.</p>
+      <p>To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):</p>
+      <div class="example">
+        <code class="cmd">C:\Users\Your Name>python --version</code>
+      </div>
+      <p>To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:</p>
+      <div class="example">
+        <code class="cmd">python --version </code>
+      </div>
+      <p>if you find that you do not have python installed on your computer, then you can download it for free from the following website:<a href="https://www.python.org/">https://www.python.org/</a></p>
+        <h3>Python Quickstart</h3>
+        <p>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.</p>
+        <p>The way to run a python file is like this on the command line:</p>
+        <div class="example">
+          <code class="cmd">C:\Users\Your Name>python helloworld.py</code></div>
+        <p>Where "helloworld.py" is the name of your python file.</p>
+        <p>Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p>
+        <div class="example">
+          <p class="ex">Example</p>
+          <code><span class="red">print</span>("<span class="blue">Hello, World!</span>")</code></div>
+        <p>Simple as that. Save your file. Open your command line, navigate to the directory whereyou saved your file, and run:</p>
+        <div class="example">
+          <code class="cmd">C:\Users\Your Name>python helloworld.py</code></div>
+        <p>The output should read:</p>
+        <div class="example">
+          <code class="cmd">Hello, World!</code>
+        </div>
+        <p>Congratulations, you have written and executed your first Python program.</p>
+        <h3>The Python Command Line</h3>
+        <p>To test a short amount of code in python sometimes it is quickest and easiest not to write the code in a file. This is made possible because Python can be run as a command line itself.</p>
+        <p>Type the following on the Windows, Mac or Linux command line:</p>
+        <div class="example">
+          <code class="cmd">C:\Users\Your Name>python</code>
+        </div>
+        <p>From there you can write any python, including our hello world example from earlier in the tutorial:</p>
+        <div class="example">
+          <code class="cmd">C:\Users\Your Name>python<br>
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32<br>
+Type "help", "copyright", "credits" or "license" for more information.<br>
+          >>> print("Hello, World!")</code>
+        </div>
+        <p>Which will write "Hello, World!" in the command line:</p>
+        <div class="example">
+          <code class="cmd">C:\Users\Your Name>python<br>
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32<br>
+Type "help", "copyright", "credits" or "license" for more information.<br>
+>>> print("Hello, World!")<br>
+          Hello, World!</code>
+        </div>
+        <p>Whenever you are done in the python command line, you can simply type the following to quit the python command line interface:</p>
+        <div class="example">
+          <code class="cmd">exit()</code>
+      </div>
+    </section>
+    <section id="Python_Variables" class="main-section">
+      <header>Python Variables</header>
+      <h3>Creating Variables</h3>
+      <p>Unlike other programming languages, Python has no command for declaring a variable.</p>
+      <div class="example">
+        <p class="ex">Example</p>
+        <code>x = <span class="red">5</span><br>y = "<span class="maroon">John</span>"<br><span class="blue">print</span>(x)<br><span class="blue">print</span>(y)
+</code></div>
+      <p>Variables do not need to be declared with any particular type and can even change type after they have been set.</p>
+      <div class="example">
+        <p class="ex">Example</p>
+        <code>x = <span class="red">4</span><span class="green"> # x is of type int</span><br>
+            x = "<span class="maroon">Sally</span>"<span class="green"> # x is now of type str</span><br><span class="blue">print</span>(x)</code></div>
+        <h3>Variable Names</h3>
+        <p>WA variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:</p>
+        <ul>
+          <li>A variable name must start with a letter or the underscore character</li>
+          <li>A variable name cannot start with a number</li>
+          <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+          <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+        </ul>
+        <div class="warning">
+          Remember that variables are case-sensitive
+        </div>
+        <h3>Output Variables</h3>
+        <p>The Python "print" statement is often used to output variables.</p>
+        <p>To combine both text and a variable, Python uses the "+" character:</p>
+        <div class="example">
+          <p class="ex">Example</p>
+          <code>x = "<span class="maroon">awesome</span>"<br><span class="blue">print</span>("<span class="maroon">Python is</span>" + x)
+          </code></div>
+        <p>You can also use the "+" character to add a variable to another variable:</p>
+        <div class="example">
+          <p class="ex">Example</p>
+          <code>x = "<span class="maroon">Python is</span>"<br>y = "<span class="maroon">awesome</span>"<br>z =  x + y<br><span class="blue">print</span>(z)
+          </code></div>
+        <p>For numbers, the "+" character works as a mathematical operator:</p>
+        <div class="example">
+          <p class="ex">Example</p>
+          <code>x = <span class="red">5</span><br>y = <span class="red">10</span><br><span class="blue">print</span>(x + y)</code></div>
+        <p>If you try to combine a string and a number, Python will give you an error:</p>
+        <div class="error">
+          <p class="ex">Example</p>
+          <code>x = <span class="red">5</span><br>y = "<span class="maroon">John</span>"<br><span class="blue">print</span>(x + y)
+          </code>
+        </div>
+    </section>
+    <section id="Python_Numbers" class="main-section">
+      <header>Python Numbers</header>
+      <h3>Python Numbers</h3>
+      <p>There are three numeric types in Python:</p>
+      <ul>
+        <li>int</li>
+        <li>float</li>
+        <li>complex</li>
+      </ul>
+      <div class="example">
+        <p class="ex">Example</p>
+        <code>x = <span class="red">1</span> <span class="green">&#8594; int</span><br>y = <span class="red">2.8</span> <span class="green">&#8594; float</span><br>z = 1j <span class="green">&#8594; complex</span></code>
+      </div>
+      <p>To verify the type of any object in Python, use the type() function:</p>
+      <div class="example">
+        <p class="ex">Example</p>
+        <code><span class="blue">print</span>(<span class="blue">type</span>(x))<br><span class="blue">print</span>(<span class="blue">type</span>(y))<br><span class="blue">print</span>(<span class="blue">type</span>(z))</code>
+      </div>
+        <h3>Int</h3>
+        <p>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</p>
+        <div class="example">
+          <p class="ex">Example</p>
+          <code>x = <span class="red">1</span><br>y = <span class="red">35656222554887711</span><br>z = -<span class="red">3255522</span><br><br><span class="blue">print</span>(<span class="blue">type</span>(x))<br><span class="blue">print</span>(<span class="blue">type</span>(y))<br>
+           <span class="blue">print</span>(<span class="blue">type</span>(z))</code>
+        </div>
+        <h3>Float</h3>
+        <p>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.</p>
+        <div class="example">
+          <p class="ex">Example</p>
+          <code>x = <span class="red">1.10</span><br>y = <span class="red">1.0</span><br>z = -<span class="red">35.59</span><br><br>
+          <span class="blue">print</span>(<span class="blue">type</span>(x))<br><span class="blue">print</span>(<span class="blue">type</span>(y))<br><span class="blue">print</span>(<span class="blue">type</span>(z))</code>
+        </div>
+        <p>Float can also be scientific numbers with an "e" to indicate the power of 10.</p>
+        <div class="example">
+          <p class="ex">Example</p>
+          <code>x = <span class="red">35e3</span><br>y = <span class="red">12E4</span><br>z = -<span class="red">87.7e100</span><br><br>
+          <span class="blue">print</span>(<span class="blue">type</span>(x))<br><span class="blue">print</span>(<span class="blue">type</span>(y))<br><span class="blue">print</span>(<span class="blue">type</span>(z))<br></code>
+        </div>
+        <h3>Complex</h3>
+        <p>Complex numbers are written with a "j" as the imaginary part:</p>
+        <div class="example">
+          <p class="ex">Example</p>
+          <code>x = <span class="red">3</span>+5j<br>y = 5j<br>z = -5j<br><br>
+          <span class="blue">print</span>(<span class="blue">type</span>(x))<br><span class="blue">print</span>(<span class="blue">type</span>(y))<br><span class="blue">print</span>(<span class="blue">type</span>(z))</code>
+        </div>
+    </section>
+    <section id="Python_Casting" class="main-section">
+      <header>Python Casting</header>
+      <h3>Specify a Variable Type</h3>
+      <p>There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.</p>
+      <ul>
+        <li><span class="para">int( )</span> - constructs an integer number from an integer literal, a float literal (by rounding down to the previous whole number), or a string literal (providing the string represents a whole number)</li>
+        <li><span class="para">Float( )</span> - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)</li>
+        <li><span class="para">Str( )</span> - constructs a string from a wide variety of data types, including strings, integer literals and float literals</li>
+      </ul>
+      <div class="example">
+        <p class="ex">Example</p>
+        <p>Integers</p>
+        <code>x = <span class="blue">int</span>(<span class="red">1</span>)&nbsp;&nbsp; <span class="green"># x will be 1</span><br>
+                y = <span class="blue">int</span>(<span class="red">2.8</span>) <span class="green"># x will be 2</span><br>
+                z = <span class="blue">int</span>("<span class="maroon">3</span>") <span class="green"># x will be 3</span><br>
+              </code>
+      </div>
+      <div class="example">
+        <p class="ex">Example</p>
+        <p>FLoats</p>
+        <code>x = <span class="blue">float</span>(<span class="red">1</span>)&nbsp;&nbsp;&nbsp; <span class="green"># x will be 1.0</span><br>
+                y = <span class="blue">float</span>(<span class="red">2.8</span>)&nbsp; <span class="green"># x will be 2.8</span><br>
+                z = <span class="blue">float</span>("<span class="maroon">3</span>")&nbsp; <span class="green"># x will be 3.0</span><br>
+                w = <span class="blue">float</span>("<span class="maroon">4.2</span>")<span class="green"># x will be 4.2</span><br>
+                </code>
+      </div>
+      <div class="example">
+        <p class="ex">Example</p>
+        <p>Strings</p>
+        <code>x = <span class="blue">str</span>("<span class="maroon">s1</span>")<span class="green"># x will be 's1'</span><br>
+                y = <span class="blue">str</span>(<span class="red">2</span>)&nbsp;&nbsp; <span class="green"># x will be '2'</span><br>
+                z = <span class="blue">str</span>(<span class="red">3.0</span>) <span class="green"># x will be '3.0'</span><br>
+              </code>
+      </div>
+          </section>
+      <section id="Python_Strings" class="main-section">
+        <header>Python Strings</header>
+        <h3>String Literals</h3>
+        <p>String literals in python are surrounded by either single quotation marks, or double quotation marks.</p>
+        <p><span class="para">'hello'</span> is the same as <span class="para">"hello"</span>.</p>
+        <p>Strings can be output to screen using the print function. For example: <span class="para">print("hello")</span.</p>
+                 <p>Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters. However, Python does not have a character data type, a single character is simply a string with a length of 1. Square brackets can be used to access elements of the string.</p>
+   <div class="example">
+    <p class="ex">Example</p>
+       <p>Get the character at position 1 (remember that the first character has the position 0):</p>
+     <code>a = <span class="maroon">"Hello, World!"</span><br>
+          <span class="blue">print</span>(a[<span class="red">1</span>])</code>
+          </div>
+          <div class="example">
+            <p class="ex">Example</p>
+            <p>Substring. Get the characters from position 2 to position 5 (not included):</p>
+            <code>a = <span class="maroon">"Hello, World!"</span><br>
+       <span class="blue">print</span>(b[<span class="red">2</span>:<span class="red">5</span>])</code>
+          </div>
+          <div class="example">
+            <p class="ex">Example</p>
+            <p>The strip() method removes any whitespace from the beginning or the end:</p>
+            <code>a = <span class="maroon">"Hello, World!"</span><br>
+       <span class="blue">print</span>(a.strip()) <span class="green">
+       # returns "Hello, World!"</span></code>
+          </div>
+          <div class="example">
+            <p class="ex">Example</p>
+            <p>The len() method returns the length of a string:</p>
+            <code>a = <span class="maroon">"Hello, World!"</span><br>
+       <span class="blue">print</span>(<span class="blue">len</span>(a))</code>
+          </div>
+          <div class="example">
+            <p class="ex">Example</p>
+            <p>The lower() method returns the string in lower case:</p>
+            <code>a = <span class="maroon">"Hello, World!"</span><br>
+       <span class="blue">print</span>(a.lower())</code>
+          </div>
+          <div class="example">
+            <p class="ex">Example</p>
+            <p>The upper() method returns the string in upper case:</p>
+            <code>a = <span class="maroon">"Hello, World!"</span><br>
+       <span class="blue">print</span>(a.upper())</code>
+          </div>
+          <div class="example">
+            <p class="ex">Example</p>
+            <p>The replace() method replaces a string with another string:</p>
+            <code>a = <span class="maroon">"Hello, World!"</span><br>
+       <span class="blue">print</span>(a.replace("<span class="maroon">H</span>", "<span class="maroon">J</span>"))</code>
+          </div>
+          <div class="example">
+            <p class="ex">Example</p>
+            <p>The split() method splits the string into substrings if it finds instances of the separator:</p>
+            <code>a = <span class="maroon">"Hello, World!"</span><br>
+       <span class="blue">print</span>(a.split(<span class="maroon">","</span>)) <span class="green"># returns ['Hello', ' World!']</span></code>
+          </div>
+            <h3>Command-line String Input</h3>
+            <p>Python allows for command line input.</p>
+            <p>That means we are able to ask the user for input.</span>
+              <p>The following example asks for the user's name, then, by using the <span class="para">input()</span> method, the program prints the name to the screen:</span>
+                <div class="example">
+                  <p class="ex">Example</p>
+                  <p>demo_string_input.py</p>
+                  <code><span class="blue">print</span>(<span class="maroon">"Enter your name:"</span>)<br>x = <span class="blue">input</span>()<br><span class="blue">
+                     print</span>(<span class="maroon">"Hello, "</span> + x)</code>
+                </div>
+                <p>Save this file as <span class="para">demo_string_input.py</span>, and load it through the command line:</p>
+                <div class="example">
+                  <code class="cmd">C:\Users\Your Name>python demo_string_input.py</code>
+                </div>
+                <p>Our program will prompt the user for a string:</p>
+                <div class="example">
+                  <code class="cmd">Enter your name:</code>
+                </div>
+                <p>The user now enters a name:</p>
+                <div class="example">
+                  <code class="cmd">Linus</code>
+                </div>
+                <p>Then, the program prints it to screen with a little message:</p>
+                <div class="example">
+                  <code class="cmd">Hello, Linus</code>
+      </section>
+          <h3>Reference</h3>
+          <p>All the documentation in this page is taken from w3schools.com</p>
+  </main>
+</body>
+
+</html>
